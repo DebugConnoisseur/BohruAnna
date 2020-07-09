@@ -15,5 +15,5 @@ class MyClient(discord.Client):
             await message.channel.send('I am ass fellow and a dumb idiot {0.author.mention}'.format(message))
 
 client = MyClient()
-client.run('token')
+client.run('NzMwMDA5ODg1NDE2MzU3OTY4.XwXyFw.382GUAzUVJ59L2_ESUR4wn9JwZc')
 

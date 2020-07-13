@@ -33,7 +33,18 @@ class MyClient(discord.Client):
             return
         if message.content.startswith('!praise'):
             await message.channel.send('Our Hero!! {0.author.mention}'.format(message))
-        
+        if message.author.id == self.user.id:
+            return
+        if message.content.startswith('!sirdoubt'):
+            await message.channel.send('Sir,sir, sir, one doubt sir '.format(message))
+        if message.author.id == self.user.id:
+            return
+        if message.content.startswith('!pissoff'):
+            await message.channel.send('Who ra that is '.format(message))
+        if message.author.id == self.user.id:
+            return
+        if message.content.startswith('!realize'):
+            await message.channel.send('You left me alone aa?'.format(message))
         
             
 client = MyClient()
